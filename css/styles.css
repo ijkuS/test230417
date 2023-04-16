@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 2rem;
+    padding: 10px;
+
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    background-image: url("images/pattern-background-desktop") ;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+ 
+}
+
+main {
+    margin-top: 10rem;
+    max-width: 100%;
+    width: 400px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+ 
+}
+
+.header-image img {
+    max-width: 100%;
+    border-radius: 10px 10px 0 0;
+ 
+}
+
+.order-summary {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+
+}
+
+.order-summary h1 {
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+
+}
+
+.order-summary p {
+    font-size: 15px;
+    color: hsl(224, 23%, 55%);
+
+}
+
+.plan {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    gap: 1rem;
+
+    font-size: 13px;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+    padding: 20px;
+
+}
+
+.plan > .plan-detail {
+    text-align: left;
+
+}
+
+.plan h3 {
+    color: hsl(223, 47%, 23%);
+    font-weight: 700;
+
+}
+
+.plan > a {
+    position: absolute;
+    right: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    color: hsl(245, 75%, 52%);
+
+}
+
+button {
+    background: none;
+    border: none;
+    border-radius: 10px;
+
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    
+    padding: 1rem;
+
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+
+}
+
+button.payment {
+    background-color: hsl(245, 75%, 52%);
+    color: white ; 
+    box-shadow: 0px 15px 20px 5px rgba(0, 0, 255, .15); /* rgba에서 a는 불투명도 값*/
+
+}
+
+button.cancel {
+    background: none;
+    color: hsl(224, 23%, 55%); 
+
+}
+
+button.payment:hover {
+    background-color: #766cf1;
+    box-shadow: #766cf1;
+    
+}
+
+button.cancel:hover {
+    background: none;
+    color: hsl(223, 47%, 23%); 
+
+    
+}
+
+
+.attribution {
+    font-size: 13px;
+    text-align: center;
+    padding-bottom: 2rem;
+
+}
+
+.attribution a {
+    color: hsl(224, 23%, 55%);
+    
+
+}
+
+@media screen and (max-width: 582px) {
+    body {
+        background-image: url("images/pattern-background-mobile.svg");
+
+    }
+    
+}
+
+
+
+
+
+
+/*
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+
+### Neutral
+
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+  > brighter violet: #766cf1 
+
+- Dark blue: hsl(223, 47%, 23%)
+
+font-family: 'Red Hat Display', sans-serif;
+*/
+
+
